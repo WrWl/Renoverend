@@ -1,0 +1,190 @@
+/* сброс базовых настроек для разных браузеров*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+
+input { outline: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* создание стилей-шаблонов для чаще всего используемых стилей*/
+
+:root{
+    --main-orange-color: #ffbb00;
+    --main-blue-color: #203f7d;
+    --main-white-color: #ffffff;
+    --main-grey-color:#444444;
+    --font-size-medium: 20px;
+    --font-size-small: 13px;
+    --font-size-large: 36px;
+    --font-size-x-large: 42px;
+}
+body{
+    font-family: Barlow;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+}
+/*container*/
+
+.container{
+    margin: 0 90px;
+}
+
+/*pre-header section*/
+.pre-header{
+display: flex;
+width: 100%;
+justify-content: space-between;
+align-items:center ;
+height: 40px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: row;
+}
+.contact-list>.contact-list-item:nth-child(odd){
+    margin-right: 20px;
+
+}
+
+.contact-list-item {
+   
+}
+.contact-icons {
+
+}
+.contact-text {
+    
+}
+/*header section*/
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items:center ;
+    height: 75px;
+}
+
+.header-table {}
+
+.logo {}
+
+.nav {}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+.nav-list>.nav-item:not(:last-child){
+    margin-right: 20px;
+    
+}
+.pseudo-button{
+    background-color: var(--main-orange-color);
+    padding:10px 20px;
+}
+.nav-item {}
+
+.nav-link {}
+
+/*main*/
+
+/*feedback section*/
+.feedback {
+display: flex;
+flex-direction: row;
+background-image: url(../giphy.webp);
+background-size: cover;
+color: var(--main-white-color);
+}
+
+.feedback>div{
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0;
+    height: 100%;
+}
+.first-column {
+    width: 33.3%;
+    display: flex;
+    justify-self: center;
+    
+}
+.first-column-list{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.first-column>.first-column-item{
+    
+}
+.first-column-item {
+    
+
+}
+
+.first-column-title {
+    font-size: 54px;
+   
+    align-items: start;
+}
+
+.first-column-text{
+    font-size: 16px;
+    background: var(--main-orange-color);
+    padding: 34px;
+}
+
+.second-column {
+    width: 33.3%;
+}
+
+.second-column-list {
+    list-style-type: disc;
+}
+
+
+.third-column{
+    width: 33.3%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item{
+
+}
+
+.third-colum-paragraph {}
+
+.third-column-text {}
+
+.send-button {}
+
+
+
+
+
+
+
